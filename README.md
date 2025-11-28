@@ -1,4 +1,8 @@
 # bookbot
+<<<<<<< HEAD
+=======
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
+>>>>>>> 4811ec2 (E: Updated README.md)
 
 Bookbot is a Python program that can analyze an entire book and print out an interesting statistical report.
 
