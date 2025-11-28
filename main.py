@@ -1,3 +1,5 @@
+from stats import get_num_words
+
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
@@ -6,7 +8,7 @@ def main():
     chars_sorted_list = chars_dict_to_sorted_list(chars_dict)
 
     print(f"\n---------- | Begin report of {book_path} | ----------\n")
-    print(f"There were {num_words} words found in the document\n")
+    print(f"Found {num_words} total words\n")
 
     for item in chars_sorted_list:
         if not item["char"].isalpha():
@@ -14,11 +16,6 @@ def main():
         print(f"The '{item['char']}' character was found {item['num']} times")
 
     print("\n---------- | End report | ----------")
-
-
-def get_num_words(text):
-    words = text.split()
-    return len(words)
 
 
 def sort_on(d):
